@@ -8,7 +8,7 @@ import android.widget.ImageView;
 import java.util.Random;
 
 
-public class SplashScreen extends Activity {
+public class SplashScreen extends MainActivity {
 
     Thread splashTread;
     ImageView imageView;
@@ -16,7 +16,7 @@ public class SplashScreen extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splashscreen);
-        imageView = (ImageView)findViewById(R.id.imageView);
+        imageView = (ImageView) findViewById(R.id.splash);
         imageView.setScaleType(ImageView.ScaleType.FIT_XY);
         int[] ids = new int[]{R.drawable.s_img,R.drawable.s_image_black, R.drawable.s_image_black2};
         Random randomGenerator = new Random();
